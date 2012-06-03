@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="383dp"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ems="10"
+            android:maxLines="1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title"
+            android:layout_alignBottom="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:text="Let&apos;s sync on:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/title"
+            android:text="Details:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:ems="10"
+            android:minHeight="75sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/details"
+            android:text="Date:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/dateDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="" />
+
+        <Button
+            android:id="@+id/pickDate"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text="Choose date" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_below="@+id/pickDate"
+            android:text="Time:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/pickTime"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pickDate"
+            android:layout_below="@+id/TextView01"
+            android:text="Choose time" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/pickTime"
+            android:text="Minimum attendance:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/timeDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView01"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_alignLeft="@+id/dateDisplay"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/numDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView02"
+            android:layout_alignBottom="@+id/TextView02"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/TextView02"
+            android:ems="10"
+            android:maxLines="1"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView02"
+            android:minHeight="75dp"
+            android:text="Count me in" />
+
+                <Button
+            android:id="@+id/syncit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                        android:layout_below="@+id/checkBox1"
+            android:layout_centerHorizontal="true"
+            android:text="Sync it!" />
+        
+    </RelativeLayout>
+
+     </ScrollView>
